@@ -116,10 +116,10 @@ document.addEventListener('DOMContentLoaded', function () {
             "Llevamos solo un mes juntos, pero ya tengo claro que eres como el WiFi: indispensable Gracias por ser increíble, hermosa y por no bloquearme todavía. Te adoro!💕."
 
         ];
-
         const messageBox = document.querySelector('.message p');
-        messageBox.textContent = messages[Math.floor(Math.random() * messages.length)];
 
+        const randomIndex = Math.floor(Math.random() * messages.length);
+        messageBox.textContent = messages[randomIndex];
         // Efecto en el mensaje
         const message = document.querySelector('.message');
         message.style.transform = 'translateY(-15px)';
